@@ -1,0 +1,22 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+button, input, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+}
+input[type=radio]{
+    width:auto;
+}
+fieldset{
+    max-width:100%;
+    width:30rem;
+}
