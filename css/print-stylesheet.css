@@ -1,0 +1,22 @@
+@media print {
+     body {
+         font-size: 15pt;
+         margin: 0;
+         color: #000;
+         background-color: #fff
+     }
+
+     nav,
+     form,
+     .form-container h1,
+     a {
+         display: none;
+     }
+
+     .content {
+         display: block;
+     }
+     article{
+         font-size: 15pt;
+     }
+}
