@@ -1,22 +1,399 @@
 body {
-    font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+
 }
 
-img {
-    max-width: 100%;
+img { 
+  max-width: 100%;
 }
 
-button, input, textarea{
-    font-family: inherit;
-    font-size: 100%;
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box;
+input, textarea, select, button{
+  width : 15%;
+  margin: 0;
+  font-family : inherit;
+  font-size   : 100%;
+  box-sizing: border-box;
 }
-input[type=radio]{
-    width:auto;
+
+legend {
+  overflow: hidden;
 }
-fieldset{
-    max-width:100%;
-    width:30rem;
+
+input:focus, textarea:focus {
+  border-radius: 6px;
+  outline: none;
+}
+
+[Type="radio"]{
+  width: 1%;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+main, form, footer {
+    margin: 0 .5rem;
+}
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+    background-color: #333;
+    padding: .5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+.logo-container {
+    display: flex;
+}
+
+.page-title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    background-color: #333;
+    padding-bottom: 1rem;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.active {
+    display: block;
+}
+@media screen and (min-width: 40rem) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 4.5rem;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 2rem;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 0.5rem;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 1rem;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: white;
+    }
+}
+
+legend {
+    font-size: 1.2em;
+}
+
+input,
+textarea {
+    font-size: 1em;
+    min-width: 100%;
+    }
+
+button {
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #D3D3D3;
+    color: #ffffff;
+}
+
+main {
+        display: grid;
+    }
+
+    .content {
+        display: grid;
+    }
+
+    .about-content {
+        display: grid;
+    }
+
+    .gallery {
+        display: grid;
+    }
+
+    article {
+        display: grid;
+    }
+
+    .form-container {
+        display: grid;
+    }
+
+    footer {
+        display: grid;
+        text-align: center;
+    }
+
+    .hero .content picture {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero .content p {
+        margin: 5px 0;
+    }
+
+    .hero.content picture {
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    .about-content {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    about-content p {
+        margin: 5px 0;
+    }
+
+    .about-content .my-info {
+        padding-left: 50px;
+    }
+
+    .gallery .content figure {
+        width: 90%;
+        border: 0;
+        margin: 0 auto 20px;
+    }
+
+    .gallery .content figure figcaption {
+        font-size: 15px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    article {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    article p {
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+
+    .story,
+    .form-container {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .story h1,
+    .form-container h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 48rem) {
+       
+    .hero .content {
+            width: 80%;
+            font-size: 22px;
+            margin: 20px auto 0;
+        }
+
+        .hero .content p {
+            margin: 5px 0;
+        }
+
+        .hero .content picture {
+            margin-bottom: 30px;
+        }
+
+        .about-content {
+            width: 80%;
+            font-size: 22px;
+            margin-bottom: 50px;
+            margin-left: 75px;
+        }
+
+        .about-content p {
+            margin: 5px 0;
+        }
+
+        .about-content .my-info {
+            padding-left: 150px;
+        }
+
+        .gallery .content figure {
+            width: 100%;
+            margin: 0;
+            display: flex;
+        }
+
+        .gallery .content figure figcaption {
+            width: 100%;
+            text-align: left;
+            padding-top: 125px;
+            padding-left: 100px;
+            box-sizing: border-box;
+        }
+
+        article {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        article p {
+            line-height: 1.8;
+        }
+
+        .story,
+        .form-container {
+            width: 80%;
+            padding: 0;
+        }
+
+        .story h1,
+        .form-container h1 {
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (min-width: 64rem) {
+
+        .hero .content {
+            width: 60%;
+            margin: 20px auto 0;
+        }
+
+        .hero .content p {
+            padding-left: 200px;
+        }
+
+        .about-content {
+            display: grid;
+            width: 60%;
+            margin: 0 auto 0;
+        }
+
+        .about-content p {
+            padding-left: 200px;
+        }
+
+        .about-content .my-info {
+            padding-left: 310px;
+        }
+	    
+        .gallery .content {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .gallery .content figure {
+            width: 43%;
+            margin: 0;
+            display: flex;
+            border: 1px solid #ccd;
+        }
+
+        .gallery .content figure picture {
+            width: 40%;
+        }
+
+        .gallery .content figure figcaption {
+            width: 50%;
+            text-align: center;
+            padding-top: 115px;
+        }
+
+        article {
+            display: grid;
+        }
+
+        .story,
+        .form-container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 0 200px;
+        }
+
+        .story h1,
+        .form-container h2 {
+            text-align: center;
+        }
+    }
 }
